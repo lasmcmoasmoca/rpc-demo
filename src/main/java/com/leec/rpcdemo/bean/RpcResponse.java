@@ -10,4 +10,5 @@ public class RpcResponse {
     private int status;
     private String msg;
     private Object result;
+    private String requestId;
 }

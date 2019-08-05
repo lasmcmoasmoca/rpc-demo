@@ -1,4 +1,4 @@
-package com.leec.rpcdemo.server;
+package com.leec.rpcdemo.sequence;
 
 import java.util.concurrent.atomic.AtomicLong;
 

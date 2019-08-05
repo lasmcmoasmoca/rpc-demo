@@ -69,11 +69,9 @@ public class NettyClient {
             }
         });
         channel =  channelFuture.channel();
-        channel.writeAndFlush(new RpcRequest());
         channel.closeFuture().addListener(future -> close());
 
     }
-
 
 
     public synchronized void close(){

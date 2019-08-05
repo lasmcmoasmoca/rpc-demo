@@ -9,7 +9,6 @@ import com.leec.rpcdemo.service.HelloService;
 public class HelloServiceImpl implements HelloService {
     @Override
     public String syaHello(String value) {
-        System.out.println(value);
         return "hello" + value;
     }
 }

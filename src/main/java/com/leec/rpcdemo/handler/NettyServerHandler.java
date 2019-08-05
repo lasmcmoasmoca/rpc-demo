@@ -36,6 +36,7 @@ public class NettyServerHandler extends ChannelInboundHandlerAdapter {
         response.setMsg("ok");
         response.setStatus(0);
         response.setResult(result);
+        response.setRequestId(request.getRequestId());
         request.getRequestId();
         ctx.writeAndFlush(JSON.toJSONString(response)).addListener(future -> {
             System.out.println("server response success result:{}" + JSON.toJSONString(response));
